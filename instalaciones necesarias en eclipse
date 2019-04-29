@@ -1,0 +1,16 @@
+--instalaciones necesarias en eclipse
+ testng plugin se descarga del marketplace de eclipse
+ maven plugin adicionar las dependencias correspondientes
+ instalar plugin de selenium en firefox, descargar los drivers para los navegadpres y ponerlos en el proyecto
+
+--usar el selenuim para guardar los pasos de la prueba
+hacer la grabacion, exportar la clase test de selenium, y ejecutarla, para testng se cambian las etiquetas
+
+--configuracion se aplica para 
+.Url de aplicacion
+. login o password de acceso
+. navegador o dispositivo
+-Vamos a configurar la url objetivo y el driver del navegador
+Crear el archivo config.properties en la raiz del projecto
+Se crea la clase que lee las propiedades de ese archivo
+Se crea la clase driver para generalizar los drivers que se van a obtener desde el archivo de propiedades(tener en cuenta que chrome solo sirve para la version 74)

@@ -1,0 +1,172 @@
+{
+  "id": "b141ca3a-6a66-4c44-b5d4-568a04cee019",
+  "version": "2.0",
+  "name": "ddt-test",
+  "url": "https://www.booking.com",
+  "tests": [{
+    "id": "5c10f368-9b37-4f8c-b8d4-676e3b117c7d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "8bfbbbbe-981b-493a-90f4-ee937038fd83",
+      "comment": "",
+      "command": "open",
+      "target": "/index.es.html?label=gen173nr-1BCAEoggI46AdIM1gEaDKIAQGYAQq4ARfIAQ_YAQHoAQGIAgGoAgO4AtWSmeYFwAIB;sid=11714a9d9ffdb27faaa9608b29d6372e;keep_landing=1&sb_price_type=total&",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "388fd317-d93a-45ff-8093-4b114a4eefe1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87a9698b-17cf-4594-9daa-3febb11f1ec9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Registra tu alojamiento",
+      "targets": [
+        ["linkText=Registra tu alojamiento", "linkText"],
+        ["css=.add-property__button", "css:finder"],
+        ["xpath=//li[@id='add_property_topbar']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://join.booking.com/?lang=es&utm_source=topbar&utm_medium=frontend&label=gen173nr-1FCAEoggI46AdIM1gEaDKIAQGYAQq4ARfIAQ_YAQHoAQH4AQuIAgGoAgO4AtWSmeYFwAIB&aid=304142')]", "xpath:href"],
+        ["xpath=//body/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registra tu alojamiento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "571172d6-c084-4033-a8de-d3b0a225dbcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=ss",
+      "targets": [
+        ["id=ss", "id"],
+        ["name=ss", "name"],
+        ["css=#ss", "css:finder"],
+        ["xpath=//input[@id='ss']", "xpath:attributes"],
+        ["xpath=//form[@id='frm']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "498a368f-25e1-4637-a691-a3e391e97298",
+      "comment": "",
+      "command": "type",
+      "target": "id=ss",
+      "targets": [
+        ["id=ss", "id"],
+        ["name=ss", "name"],
+        ["css=#ss", "css:finder"],
+        ["xpath=//input[@id='ss']", "xpath:attributes"],
+        ["xpath=//form[@id='frm']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Cartagena"
+    }, {
+      "id": "48049092-bef1-4a20-9b37-e4b48db75f92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sb-autocomplete__item-with_photo:nth-child(1) > span",
+      "targets": [
+        ["css=.sb-autocomplete__item-with_photo:nth-child(1) > span", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div/div/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cartagena de Indias, Bolívar, Colombia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96530625-6879-4a76-b97f-49c582e70c98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bui-calendar__wrapper:nth-child(1) .bui-calendar__row:nth-child(6) > .bui-calendar__date:nth-child(3)",
+      "targets": [
+        ["css=.bui-calendar__wrapper:nth-child(1) .bui-calendar__row:nth-child(6) > .bui-calendar__date:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div[2]/div[2]/div/div/div[3]/div/table/tbody/tr[6]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8088df68-ed43-4709-a62b-30d04b59fe8e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "705b3f7d-cb7c-44f2-b817-86d35a568f55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xp__input-group:nth-child(3) .sb-date-field__icon",
+      "targets": [
+        ["css=.xp__input-group:nth-child(3) .sb-date-field__icon", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div[2]/div/div[3]/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d6b6e8-dd19-4a7d-92da-1d6a4b5b8292",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xp__input-group:nth-child(3) .sb-date-field__icon",
+      "targets": [
+        ["css=.xp__input-group:nth-child(3) .sb-date-field__icon", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div[2]/div/div[3]/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc26a75b-1ec6-40d6-8951-b2986367e672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bui-calendar__wrapper:nth-child(2) .bui-calendar__row:nth-child(3) > .bui-calendar__date:nth-child(4)",
+      "targets": [
+        ["css=.bui-calendar__wrapper:nth-child(2) .bui-calendar__row:nth-child(3) > .bui-calendar__date:nth-child(4)", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div[2]/div[2]/div/div/div[3]/div[2]/table/tbody/tr[3]/td[4]", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr[3]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2699848d-32b3-4687-9101-8b5d29509d4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xp__travel-purpose > .bui-checkbox__label",
+      "targets": [
+        ["css=.xp__travel-purpose > .bui-checkbox__label", "css:finder"],
+        ["xpath=//form[@id='frm']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Viajo por trabajo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a7b38f8-83e0-4633-afd4-8e0f6164177e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sb-searchbox__button > span:nth-child(1)",
+      "targets": [
+        ["css=.sb-searchbox__button > span:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='frm']/div/div[4]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf654088-5f1f-4105-93d1-cc201a3c56d6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,21)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "983a5e08-ab97-4112-bbec-cb8f9203072b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5c10f368-9b37-4f8c-b8d4-676e3b117c7d"]
+  }],
+  "urls": ["https://www.booking.com/"],
+  "plugins": []
+}
