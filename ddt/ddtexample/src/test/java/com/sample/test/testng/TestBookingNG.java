@@ -1,11 +1,12 @@
 package com.sample.test.testng;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class TestBookingNG {
 
@@ -13,7 +14,7 @@ public class TestBookingNG {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.get("https://www.booking.com/");
 	}
 

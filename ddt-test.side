@@ -2,7 +2,7 @@
   "id": "b141ca3a-6a66-4c44-b5d4-568a04cee019",
   "version": "2.0",
   "name": "ddt-test",
-  "url": "https://www.booking.com",
+  "url": "http://localhost:4200/heroes",
   "tests": [{
     "id": "5c10f368-9b37-4f8c-b8d4-676e3b117c7d",
     "name": "Untitled",
@@ -158,6 +158,153 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "baafc68a-555f-49fe-9adb-406c1f68ebce",
+    "name": "heroesapp",
+    "commands": [{
+      "id": "3ffeba55-fe5f-4791-9661-7af14c9740e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/heroes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b9ac31d-e940-47f7-8c3d-04853d014027",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "872x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61757b34-9401-4cdb-bc51-c9756f715f41",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Nuevo Héroe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "267f2dd4-224a-4f55-bc11-c15c987177fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a0074c7-fcde-4687-a378-1ba8fb6b7200",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Spiderman"
+    }, {
+      "id": "b0aaa7f8-dba5-4baa-badb-c856bd44c571",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=option:nth-child(1)",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='Marvel']", "xpath:attributes"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,'Marvel')]", "xpath:innerText"]
+      ],
+      "value": "-93,-268.79998779296875"
+    }, {
+      "id": "38dde371-32b1-409f-bd6c-7e85439d5b11",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=option:nth-child(1)",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='Marvel']", "xpath:attributes"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,'Marvel')]", "xpath:innerText"]
+      ],
+      "value": "-93,-268.79998779296875"
+    }, {
+      "id": "0b0d96f7-002d-4a5e-acfa-cd2bf12ba0bc",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=option:nth-child(1)",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='Marvel']", "xpath:attributes"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,'Marvel')]", "xpath:innerText"]
+      ],
+      "value": "-93,-268.79998779296875"
+    }, {
+      "id": "d65cc24c-66a0-4e16-93a3-dac5a666cc60",
+      "comment": "",
+      "command": "select",
+      "target": "name=casa",
+      "targets": [],
+      "value": "label=Marvel"
+    }, {
+      "id": "58e39e3b-5b30-444e-ad0a-69d244a3a58e",
+      "comment": "",
+      "command": "click",
+      "target": "name=bio",
+      "targets": [
+        ["name=bio", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b098c947-83ae-40b1-8507-16e826e49872",
+      "comment": "",
+      "command": "type",
+      "target": "name=bio",
+      "targets": [
+        ["name=bio", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='bio']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Spider-Man (llamado Hombre Araña en muchas de las traducciones al español) es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy # 15 (agosto de 1962) en la Edad de Plata de los cómics."
+    }, {
+      "id": "09e5734b-ae88-4c8e-ba4c-214a2537ffc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-primary",
+      "targets": [
+        ["css=.btn-outline-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9cc7601-a0f7-4093-beb3-ca647f98362b",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Regresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "983a5e08-ab97-4112-bbec-cb8f9203072b",
@@ -167,6 +314,6 @@
     "timeout": 300,
     "tests": ["5c10f368-9b37-4f8c-b8d4-676e3b117c7d"]
   }],
-  "urls": ["https://www.booking.com/"],
+  "urls": ["https://www.booking.com/", "http://localhost:4200/heroes"],
   "plugins": []
 }

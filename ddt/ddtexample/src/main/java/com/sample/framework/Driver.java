@@ -1,6 +1,5 @@
 package com.sample.framework;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 import org.openqa.selenium.Capabilities;
@@ -13,6 +12,11 @@ public class Driver {
 	private static WebDriver driver;
 	
 	private static final HashMap<String, Class<?>> driverMap = new HashMap<String, Class<?>>(){
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		{
 			put("chrome", ChromeDriver.class);
 			put("firefox", FirefoxDriver.class);
