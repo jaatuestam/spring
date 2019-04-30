@@ -2,49 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33827" started-at="2019-04-30T03:26:44Z" finished-at="2019-04-30T03:27:18Z">
+  <suite name="Default suite" duration-ms="6920" started-at="2019-04-30T14:41:28Z" finished-at="2019-04-30T14:41:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33827" started-at="2019-04-30T03:26:44Z" finished-at="2019-04-30T03:27:18Z">
+    <test name="Default test" duration-ms="6920" started-at="2019-04-30T14:41:28Z" finished-at="2019-04-30T14:41:35Z">
       <class name="com.sample.test.testng.TestHeroesAppNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="setUp" is-config="true" duration-ms="13358" started-at="2019-04-29T22:26:44Z" finished-at="2019-04-29T22:26:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="2694" started-at="2019-04-30T09:41:28Z" finished-at="2019-04-30T09:41:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSampleSearchFromService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="testSampleSearchFromService" duration-ms="1986" started-at="2019-04-29T22:26:58Z" data-provider="service_provider" finished-at="2019-04-29T22:27:00Z">
+        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="927" started-at="2019-04-30T09:41:31Z" data-provider="excel_provider" finished-at="2019-04-30T09:41:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Storm]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DC]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bio de storm]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSampleSearchFromService -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="tearDown" is-config="true" duration-ms="3022" started-at="2019-04-29T22:27:00Z" finished-at="2019-04-29T22:27:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="setUp" is-config="true" duration-ms="9987" started-at="2019-04-29T22:27:03Z" finished-at="2019-04-29T22:27:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSampleSearchFromService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="testSampleSearchFromService" duration-ms="2067" started-at="2019-04-29T22:27:13Z" data-provider="service_provider" finished-at="2019-04-29T22:27:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Capitan America]]>
+                <![CDATA[scarlet witch]]>
               </value>
             </param>
             <param index="1">
@@ -54,14 +25,43 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[bio de Capitan America]]>
+                <![CDATA[La Bruja Escarlata es una superheroína ficticia que aparece en los cómics publicados por Marvel Comics. Apareció por primera vez en X-Men #4 y fue creada por Stan Lee y Jack Kirby, debutando en la denominada Edad de Plata de los Cómics. ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSampleSearchFromService -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="tearDown" is-config="true" duration-ms="2931" started-at="2019-04-29T22:27:15Z" finished-at="2019-04-29T22:27:18Z">
+        </test-method> <!-- testFromExcel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="86" started-at="2019-04-30T09:41:32Z" finished-at="2019-04-30T09:41:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="1567" started-at="2019-04-30T09:41:32Z" finished-at="2019-04-30T09:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="1042" started-at="2019-04-30T09:41:33Z" data-provider="excel_provider" finished-at="2019-04-30T09:41:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cyborg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicadas por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y aparece por primera vez en un suplemento especial en DC Comics Presents #26 (octubre de 1980). Cyborg es conocido como un miembro de los Jóvenes Titanes.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromExcel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="81" started-at="2019-04-30T09:41:34Z" finished-at="2019-04-30T09:41:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
