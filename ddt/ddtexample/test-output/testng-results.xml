@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9286" started-at="2019-04-29T21:51:17Z" finished-at="2019-04-29T21:51:26Z">
+  <suite name="Default suite" duration-ms="33827" started-at="2019-04-30T03:26:44Z" finished-at="2019-04-30T03:27:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9286" started-at="2019-04-29T21:51:17Z" finished-at="2019-04-29T21:51:26Z">
+    <test name="Default test" duration-ms="33827" started-at="2019-04-30T03:26:44Z" finished-at="2019-04-30T03:27:18Z">
       <class name="com.sample.test.testng.TestHeroesAppNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="setUp" is-config="true" duration-ms="2172" started-at="2019-04-29T16:51:17Z" finished-at="2019-04-29T16:51:19Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="setUp" is-config="true" duration-ms="13358" started-at="2019-04-29T22:26:44Z" finished-at="2019-04-29T22:26:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromAnotherClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="testFromAnotherClass" duration-ms="514" started-at="2019-04-29T16:51:19Z" data-provider="provider2" finished-at="2019-04-29T16:51:19Z">
+        <test-method status="PASS" signature="testSampleSearchFromService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="testSampleSearchFromService" duration-ms="1986" started-at="2019-04-29T22:26:58Z" data-provider="service_provider" finished-at="2019-04-29T22:27:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Green Lantern]]>
+                <![CDATA[Storm]]>
               </value>
             </param>
             <param index="1">
@@ -25,26 +25,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[bio de Green Lantern]]>
+                <![CDATA[bio de storm]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFromAnotherClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="tearDown" is-config="true" duration-ms="84" started-at="2019-04-29T16:51:19Z" finished-at="2019-04-29T16:51:20Z">
+        </test-method> <!-- testSampleSearchFromService -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="tearDown" is-config="true" duration-ms="3022" started-at="2019-04-29T22:27:00Z" finished-at="2019-04-29T22:27:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="setUp" is-config="true" duration-ms="1571" started-at="2019-04-29T16:51:20Z" finished-at="2019-04-29T16:51:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="setUp" is-config="true" duration-ms="9987" started-at="2019-04-29T22:27:03Z" finished-at="2019-04-29T22:27:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromAnotherClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="testFromAnotherClass" duration-ms="495" started-at="2019-04-29T16:51:21Z" data-provider="provider2" finished-at="2019-04-29T16:51:22Z">
+        <test-method status="PASS" signature="testSampleSearchFromService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="testSampleSearchFromService" duration-ms="2067" started-at="2019-04-29T22:27:13Z" data-provider="service_provider" finished-at="2019-04-29T22:27:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Iron Man]]>
+                <![CDATA[Capitan America]]>
               </value>
             </param>
             <param index="1">
@@ -54,72 +54,14 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[bio de Iron Man]]>
+                <![CDATA[bio de Capitan America]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFromAnotherClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="tearDown" is-config="true" duration-ms="82" started-at="2019-04-29T16:51:22Z" finished-at="2019-04-29T16:51:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="setUp" is-config="true" duration-ms="1603" started-at="2019-04-29T16:51:22Z" finished-at="2019-04-29T16:51:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromSameClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="testFromSameClass" duration-ms="512" started-at="2019-04-29T16:51:23Z" data-provider="provider1" finished-at="2019-04-29T16:51:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Marvel]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bio de spiderman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromSameClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-29T16:51:24Z" finished-at="2019-04-29T16:51:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="setUp" is-config="true" duration-ms="1588" started-at="2019-04-29T16:51:24Z" finished-at="2019-04-29T16:51:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromSameClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="testFromSameClass" duration-ms="481" started-at="2019-04-29T16:51:25Z" data-provider="provider1" finished-at="2019-04-29T16:51:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Batman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DC]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bio de batman]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromSameClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4678c730]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-29T16:51:26Z" finished-at="2019-04-29T16:51:26Z">
+        </test-method> <!-- testSampleSearchFromService -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1bce4f0a]" name="tearDown" is-config="true" duration-ms="2931" started-at="2019-04-29T22:27:15Z" finished-at="2019-04-29T22:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

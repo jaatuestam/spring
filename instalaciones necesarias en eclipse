@@ -23,3 +23,6 @@ Rows define la cantidad de pruebas y columnas define los datos con que se va a p
 --Data Provider
 Un data provider es una entidad que se encarga de proveer los datos para la prueba
 Se hace en la clase de testng, se crea el provider interno, se crea un método para el provider interno que llama a la prueba pasando los datos y luego se crea un provider externo que se usa en otro método para el llamado del provider externo
+
+--Datos desde un archivo
+Crear el archivo data.csv y crear el provider file_provider, crear el test usando el provider del archivo, adicionar la libreria de commons.io y commons.lang
