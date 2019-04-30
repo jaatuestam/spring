@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
@@ -146,7 +147,12 @@ public class TestHeroesAppNG {
 		driver.findElement(By.name("bio")).click();
 		driver.findElement(By.name("bio")).sendKeys(bio);
 		driver.findElement(By.cssSelector(".btn-outline-primary")).click();
-		driver.findElement(By.name("button")).click();
+//		driver.findElement(By.name("button")).click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	// @Test(dataProvider = "provider1")
@@ -169,12 +175,12 @@ public class TestHeroesAppNG {
 		test1(name, house, bio);
 	}
 
-	@Test(dataProvider = "db_provider")
+//	@Test(dataProvider = "db_provider")
 	public void testFromDataBase(String name, String house, String bio) {
 		test1(name, house, bio);
 	}
 
-//	 @Test(dataProvider = "excel_provider")
+	 @Test(dataProvider = "excel_provider")
 	public void testFromExcel(String name, String house, String bio) throws Exception {
 		test1(name, house, bio);
 	}
