@@ -26,3 +26,6 @@ Se hace en la clase de testng, se crea el provider interno, se crea un método p
 
 --Datos desde un archivo
 Crear el archivo data.csv y crear el provider file_provider, crear el test usando el provider del archivo, adicionar la libreria de commons.io y commons.lang
+
+--Datos desde servicio
+Se agrega las dependencias de spark y httpclient, se crea la clase service
