@@ -1,50 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8215" started-at="2019-04-30T15:03:06Z" finished-at="2019-04-30T15:03:14Z">
+  <suite name="Default suite" duration-ms="10908" started-at="2019-04-30T15:08:07Z" finished-at="2019-04-30T15:08:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8215" started-at="2019-04-30T15:03:06Z" finished-at="2019-04-30T15:03:14Z">
+    <test name="Default test" duration-ms="10908" started-at="2019-04-30T15:08:07Z" finished-at="2019-04-30T15:08:18Z">
       <class name="com.sample.test.testng.TestHeroesAppNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="2025" started-at="2019-04-30T10:03:06Z" finished-at="2019-04-30T10:03:08Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="2189" started-at="2019-04-30T10:08:07Z" finished-at="2019-04-30T10:08:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="1902" started-at="2019-04-30T10:03:08Z" data-provider="excel_provider" finished-at="2019-04-30T10:03:10Z">
+        <test-method status="PASS" signature="testFromFile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromFile" duration-ms="1473" started-at="2019-04-30T10:08:09Z" data-provider="file_provider" finished-at="2019-04-30T10:08:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Scarlet Witch]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Marvel]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[La Bruja Escarlata es una superheroína ficticia que aparece en los cómics publicados por Marvel Comics. Apareció por primera vez en X-Men #4 y fue creada por Stan Lee y Jack Kirby, debutando en la denominada Edad de Plata de los Cómics. ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromExcel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="86" started-at="2019-04-30T10:03:10Z" finished-at="2019-04-30T10:03:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="1645" started-at="2019-04-30T10:03:10Z" finished-at="2019-04-30T10:03:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="2059" started-at="2019-04-30T10:03:12Z" data-provider="excel_provider" finished-at="2019-04-30T10:03:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cyborg]]>
+                <![CDATA[wonder woman]]>
               </value>
             </param>
             <param index="1">
@@ -54,14 +25,72 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicadas por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y aparece por primera vez en un suplemento especial en DC Comics Presents #26 (octubre de 1980). Cyborg es conocido como un miembro de los Jóvenes Titanes.]]>
+                <![CDATA[bio de la mujer maravilla]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFromExcel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="82" started-at="2019-04-30T10:03:14Z" finished-at="2019-04-30T10:03:14Z">
+        </test-method> <!-- testFromFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-30T10:08:10Z" finished-at="2019-04-30T10:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="1572" started-at="2019-04-30T10:08:11Z" finished-at="2019-04-30T10:08:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFromFile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromFile" duration-ms="1410" started-at="2019-04-30T10:08:12Z" data-provider="file_provider" finished-at="2019-04-30T10:08:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[flash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bio de flash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-30T10:08:14Z" finished-at="2019-04-30T10:08:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="2549" started-at="2019-04-30T10:08:14Z" finished-at="2019-04-30T10:08:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFromFile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromFile" duration-ms="1439" started-at="2019-04-30T10:08:16Z" data-provider="file_provider" finished-at="2019-04-30T10:08:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wolverine]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Marvel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bio de wolverine]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromFile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-30T10:08:18Z" finished-at="2019-04-30T10:08:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -165,7 +165,7 @@ public class TestHeroesAppNG {
 		test1(name, house, bio);
 	}
 
-	// @Test(dataProvider = "file_provider")
+	 @Test(dataProvider = "file_provider")
 	public void testFromFile(String name, String house, String bio) {
 		test1(name, house, bio);
 	}
@@ -180,7 +180,7 @@ public class TestHeroesAppNG {
 		test1(name, house, bio);
 	}
 
-	 @Test(dataProvider = "excel_provider")
+//	 @Test(dataProvider = "excel_provider")
 	public void testFromExcel(String name, String house, String bio) throws Exception {
 		test1(name, house, bio);
 	}
