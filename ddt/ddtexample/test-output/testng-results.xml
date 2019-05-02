@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8215" started-at="2019-04-30T15:03:06Z" finished-at="2019-04-30T15:03:14Z">
+  <suite name="Default suite" duration-ms="29641" started-at="2019-05-02T02:46:08Z" finished-at="2019-05-02T02:46:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8215" started-at="2019-04-30T15:03:06Z" finished-at="2019-04-30T15:03:14Z">
+    <test name="Default test" duration-ms="29641" started-at="2019-05-02T02:46:08Z" finished-at="2019-05-02T02:46:37Z">
       <class name="com.sample.test.testng.TestHeroesAppNG">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="2025" started-at="2019-04-30T10:03:06Z" finished-at="2019-04-30T10:03:08Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="setUp" is-config="true" duration-ms="10131" started-at="2019-05-01T21:46:09Z" finished-at="2019-05-01T21:46:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="1902" started-at="2019-04-30T10:03:08Z" data-provider="excel_provider" finished-at="2019-04-30T10:03:10Z">
+        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="testFromExcel" duration-ms="5196" started-at="2019-05-01T21:46:19Z" data-provider="excel_provider" finished-at="2019-05-01T21:46:24Z">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromExcel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="86" started-at="2019-04-30T10:03:10Z" finished-at="2019-04-30T10:03:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="809" started-at="2019-05-01T21:46:24Z" finished-at="2019-05-01T21:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="setUp" is-config="true" duration-ms="1645" started-at="2019-04-30T10:03:10Z" finished-at="2019-04-30T10:03:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="setUp" is-config="true" duration-ms="5958" started-at="2019-05-01T21:46:25Z" finished-at="2019-05-01T21:46:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromExcel" duration-ms="2059" started-at="2019-04-30T10:03:12Z" data-provider="excel_provider" finished-at="2019-04-30T10:03:14Z">
+        <test-method status="PASS" signature="testFromExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="testFromExcel" duration-ms="5474" started-at="2019-05-01T21:46:31Z" data-provider="excel_provider" finished-at="2019-05-01T21:46:36Z">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromExcel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="82" started-at="2019-04-30T10:03:14Z" finished-at="2019-04-30T10:03:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="813" started-at="2019-05-01T21:46:36Z" finished-at="2019-05-01T21:46:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
