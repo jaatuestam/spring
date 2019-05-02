@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+
   <suite name="Default suite" duration-ms="10908" started-at="2019-04-30T15:08:07Z" finished-at="2019-04-30T15:08:18Z">
     <groups>
     </groups>
@@ -12,6 +13,7 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="testFromFile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromFile" duration-ms="1473" started-at="2019-04-30T10:08:09Z" data-provider="file_provider" finished-at="2019-04-30T10:08:10Z">
+
           <params>
             <param index="0">
               <value>
@@ -41,6 +43,7 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="testFromFile(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="testFromFile" duration-ms="1410" started-at="2019-04-30T10:08:12Z" data-provider="file_provider" finished-at="2019-04-30T10:08:14Z">
+
           <params>
             <param index="0">
               <value>
@@ -89,8 +92,10 @@
           </params>
           <reporter-output>
           </reporter-output>
+
         </test-method> <!-- testFromFile -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sample.test.testng.TestHeroesAppNG@1a968a59]" name="tearDown" is-config="true" duration-ms="83" started-at="2019-04-30T10:08:18Z" finished-at="2019-04-30T10:08:18Z">
+
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

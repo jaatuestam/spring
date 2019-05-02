@@ -5,7 +5,9 @@
     <classes>
       <class name="com.sample.test.testng.TestHeroesAppNG">
         <methods>
-          <include name="testSampleSearchFromService"/>
+          <include name="setUp"/>
+          <include name="testFromExcel" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.sample.test.testng.TestHeroesAppNG -->
     </classes>
