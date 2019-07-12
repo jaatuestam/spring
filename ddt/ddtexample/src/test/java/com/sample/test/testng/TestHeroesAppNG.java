@@ -59,6 +59,19 @@ public class TestHeroesAppNG {
 		}
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@DataProvider(name = "file_provider")
 	public Object[][] getDataFromFile() throws IOException {
 		List<String> content = FileUtils.readLines(new File("./src/test/resources/data.csv"), Charset.defaultCharset());
@@ -68,6 +81,16 @@ public class TestHeroesAppNG {
 		}
 		return data;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	@DataProvider(name = "service_provider")
 	public Object[][] getDataFromService() {
@@ -160,7 +183,7 @@ public class TestHeroesAppNG {
 		assertNotEquals(initial, total);
 	}
 
-//	 @Test(dataProvider = "provider1")
+//	@Test(dataProvider = "provider1")
 	public void testFromSameClass(String name, String house, String bio) {
 		test1(name, house, bio);
 	}
@@ -185,7 +208,7 @@ public class TestHeroesAppNG {
 		test1(name, house, bio);
 	}
 
-//	 @Test(dataProvider = "excel_provider")
+	 @Test(dataProvider = "excel_provider")
 	public void testFromExcel(String name, String house, String bio) throws Exception {
 		test1(name, house, bio);
 	}
