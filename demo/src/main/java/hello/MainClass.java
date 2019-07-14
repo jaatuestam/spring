@@ -1,7 +1,9 @@
 package hello;
 
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
+import java.util.Set;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.PageSize;
@@ -20,32 +22,41 @@ import com.lowagie.text.pdf.TextField;
 public class MainClass {
 
     public static void main(String[] args) throws Exception {
-        createPdf("HelloLetter.pdf", "field", "value");
-        RandomAccessFileOrArray letter = new RandomAccessFileOrArray("HelloLetter.pdf");
+//        createPdf("HelloLetter.pdf", "field", "value");
+        RandomAccessFileOrArray letter = new RandomAccessFileOrArray("Asalariados.pdf");
         PdfReader  reader = new PdfReader(letter, null);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PdfStamper stamper = new PdfStamper(reader, baos);
         AcroFields form = stamper.getAcroFields();
-        form.setField("field", "World,");
+        Set<String> fldNames = form.getFields().keySet();
+        form.setField("No de Documento", "1032393128");
+        form.setField("E mail", "correo@correo.com");
+
+        for (String fldName : fldNames) {
+          System.out.println( fldName + ": " + form.getField( fldName ) );
+        }
+        
         stamper.setFormFlattening(true);
         stamper.close();
 
         reader = new PdfReader(baos.toByteArray());
-        Document document = new Document(reader.getPageSizeWithRotation(1));
+        Document document = new Document();
         PdfCopy writer = new PdfCopy(document, new FileOutputStream("HelloWorldStampCopy.pdf"));
         document.open();
         writer.addPage(writer.getImportedPage(reader, 1));
+        writer.addPage(writer.getImportedPage(reader, 2));
 
         reader = new PdfReader(letter, null);
         baos = new ByteArrayOutputStream();
         stamper = new PdfStamper(reader, baos);
         form = stamper.getAcroFields();
-        form.setField("field", "People,");
+        form.setField("No de Documento", "1032393128");
+        form.setField("E mail", "correo@correo.com");
         stamper.setFormFlattening(true);
         stamper.close();
 
         reader = new PdfReader(baos.toByteArray());
-        writer.addPage(writer.getImportedPage(reader, 1));
+//        writer.addPage(writer.getImportedPage(reader, 1));
         document.close();
     }
 
