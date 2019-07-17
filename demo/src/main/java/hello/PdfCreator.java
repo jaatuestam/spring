@@ -1,14 +1,40 @@
 package hello;
 
+import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.AcroFields;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Locale;
 
 public class PdfCreator {
+
+    public static void main(String ... args){
+        try {
+            manipulatePdf("Asalariados.pdf","Asalariados2.pdf");
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void manipulatePdf(String src, String dest) throws DocumentException, IOException {
+        PdfReader reader = new PdfReader(src);
+        PdfStamper stamper = new PdfStamper(reader,
+                new FileOutputStream(dest));
+        AcroFields fields = stamper.getAcroFields();
+        fields.setField("No de Documento", "1032393128");
+        fields.setField("E mail", "correo@correo.com");
+        fields.setField("Dirección de Residencia", "Dirección de Residencia");
+        stamper.setFormFlattening(true);
+        stamper.close();
+        reader.close();
+    }
 
    /* public byte[] getDocumentAsByteArray(Object dataBean, String pdfTemplateName) throws KkmsException {
 

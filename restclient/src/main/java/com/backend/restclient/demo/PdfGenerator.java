@@ -1,4 +1,4 @@
-package hello;
+package com.backend.restclient.demo;
 
 
 import com.itextpdf.text.Document;
@@ -28,18 +28,19 @@ import com.lowagie.text.pdf.PdfWriter;
 import com.lowagie.text.pdf.RandomAccessFileOrArray;
 import com.lowagie.text.pdf.TextField;*/
 
-public class MainClass {
+public class PdfGenerator {
 
 
 
     public static void main(String[] args) throws Exception {
+        PdfGenerator pdfGenerator = new PdfGenerator();
 //        createPdf("HelloLetter.pdf", "field", "value");
-       //generatePdfEmployee();
-        generatePdfIndependent();
+       //pdfGenerator.generatePdfEmployee();
+        pdfGenerator.generatePdfIndependent();
     }
 
-    private static void generatePdfEmployee() throws IOException, DocumentException {
-        Resource resource = new ClassPathResource("insurance/AsalariadosMod1.pdf");
+    private void generatePdfEmployee() throws IOException, DocumentException {
+        Resource resource = new ClassPathResource("insurances/AsalariadosMod.pdf", getClass().getClassLoader());
         RandomAccessSourceFactory randomAccessSourceFactory = new RandomAccessSourceFactory();
         RandomAccessFileOrArray letter = new RandomAccessFileOrArray(randomAccessSourceFactory.createSource(resource.getInputStream()));
         PdfReader reader = new PdfReader(letter, null);
@@ -96,7 +97,7 @@ public class MainClass {
 
         reader = new PdfReader(baos.toByteArray());
         Document document = new Document();
-        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurance/tmp/HelloWorldStampCopy.pdf"));
+        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurances/tmp/HelloWorldStampCopy.pdf"));
         document.open();
         writer.addPage(writer.getImportedPage(reader, 1));
         writer.addPage(writer.getImportedPage(reader, 2));
@@ -149,8 +150,8 @@ public class MainClass {
         document.close();
     }
 
-    private static void generatePdfIndependent() throws IOException, DocumentException {
-        Resource resource = new ClassPathResource("insurance/IndependientesMod1.pdf");
+    private  void generatePdfIndependent() throws IOException, DocumentException {
+        Resource resource = new ClassPathResource("insurances/IndependientesMod.pdf", getClass().getClassLoader());
         RandomAccessSourceFactory randomAccessSourceFactory = new RandomAccessSourceFactory();
         RandomAccessFileOrArray letter = new RandomAccessFileOrArray(randomAccessSourceFactory.createSource(resource.getInputStream()));
         PdfReader reader = new PdfReader(letter, null);
@@ -227,7 +228,7 @@ public class MainClass {
 
         reader = new PdfReader(baos.toByteArray());
         Document document = new Document();
-        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurance/tmp/IndependentCopy.pdf"));
+        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurances/tmp/IndependentCopy.pdf"));
         document.open();
         writer.addPage(writer.getImportedPage(reader, 1));
         writer.addPage(writer.getImportedPage(reader, 2));

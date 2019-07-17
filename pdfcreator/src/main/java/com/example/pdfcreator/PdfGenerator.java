@@ -1,4 +1,4 @@
-package hello;
+package com.example.pdfcreator;
 
 
 import com.itextpdf.text.Document;
@@ -13,33 +13,20 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Set;
 
-/*import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.AcroFields;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.GrayColor;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfCopy;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.pdf.RandomAccessFileOrArray;
-import com.lowagie.text.pdf.TextField;*/
 
-public class MainClass {
-
+public class PdfGenerator {
 
 
     public static void main(String[] args) throws Exception {
+        PdfGenerator pdfGenerator = new PdfGenerator();
 //        createPdf("HelloLetter.pdf", "field", "value");
-       //generatePdfEmployee();
-        generatePdfIndependent();
+        pdfGenerator.generatePdfEmployee();
+        System.out.println(".............-------·······........");
+        pdfGenerator.generatePdfIndependent();
     }
 
-    private static void generatePdfEmployee() throws IOException, DocumentException {
-        Resource resource = new ClassPathResource("insurance/AsalariadosMod1.pdf");
+    private void generatePdfEmployee() throws IOException, DocumentException {
+        Resource resource = new ClassPathResource("insurances/Employees.pdf", getClass().getClassLoader());
         RandomAccessSourceFactory randomAccessSourceFactory = new RandomAccessSourceFactory();
         RandomAccessFileOrArray letter = new RandomAccessFileOrArray(randomAccessSourceFactory.createSource(resource.getInputStream()));
         PdfReader reader = new PdfReader(letter, null);
@@ -78,10 +65,10 @@ public class MainClass {
         form.setField("Nombre de la oficina", "Nombre de la oficina");
 
         for (String fldName : fldNames) {
-          System.out.println( fldName + ": " + form.getField( fldName ) );
+            System.out.println("form.setField(\"" + fldName + "\", \"" + fldName + "\");");
         }
-        String states[] = form.getAppearanceStates("Check Box11");
-        form.setField("Check Box11",states[0]);  //SEXO FEMENINO
+     /*   String states[] = form.getAppearanceStates("Check Box11");
+        form.setField("Check Box11", states[0]);  //SEXO FEMENINO
         form.setField("Check Box10", states[0]);  //SEXO MASCULINO
         form.setField("Check Box13", states[0]);  //CANAL DE VENTAS UNIDADES
         form.setField("Check Box12", states[0]); //CANAL DE VENTAS GNV
@@ -89,14 +76,14 @@ public class MainClass {
         states = form.getAppearanceStates("IdentificacionPS");
         form.setField("IdentificacionCC", states[0]);  //CANAL DE VENTAS OFICINA
         form.setField("IdentificacionCE", states[0]);  //CANAL DE VENTAS OFICINA
-        form.setField("IdentificacionPS", states[0]);  //CANAL DE VENTAS OFICINA
+        form.setField("IdentificacionPS", states[0]);  //CANAL DE VENTAS OFICINA */
 
         stamper.setFormFlattening(true);
         stamper.close();
 
         reader = new PdfReader(baos.toByteArray());
         Document document = new Document();
-        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurance/tmp/HelloWorldStampCopy.pdf"));
+        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurances/tmp/HelloWorldStampCopy.pdf"));
         document.open();
         writer.addPage(writer.getImportedPage(reader, 1));
         writer.addPage(writer.getImportedPage(reader, 2));
@@ -149,8 +136,8 @@ public class MainClass {
         document.close();
     }
 
-    private static void generatePdfIndependent() throws IOException, DocumentException {
-        Resource resource = new ClassPathResource("insurance/IndependientesMod1.pdf");
+    private void generatePdfIndependent() throws IOException, DocumentException {
+        Resource resource = new ClassPathResource("insurances/IndependientesMod.pdf", getClass().getClassLoader());
         RandomAccessSourceFactory randomAccessSourceFactory = new RandomAccessSourceFactory();
         RandomAccessFileOrArray letter = new RandomAccessFileOrArray(randomAccessSourceFactory.createSource(resource.getInputStream()));
         PdfReader reader = new PdfReader(letter, null);
@@ -207,11 +194,11 @@ public class MainClass {
         form.setField("No de Documento", "No de Documento");
 
         for (String fldName : fldNames) {
-            System.out.println( "form.setField(\"" + fldName + "\", \"" + form.getField( fldName )  + "\");");
+            System.out.println("form.setField(\"" + fldName + "\", \"" + fldName + "\");");
         }
 
 
-        String states[] = form.getAppearanceStates("Check Box16");
+        /*String states[] = form.getAppearanceStates("Check Box16");
         form.setField("Check Box11", states[0]);
         form.setField("Check Box13", states[0]);
         form.setField("Check Box12", states[0]);
@@ -219,7 +206,7 @@ public class MainClass {
         form.setField("Check Box14", states[0]);
         form.setField("Check Box17", states[0]);
         form.setField("Check Box16", states[0]);
-        form.setField("Check Box18", states[0]);
+        form.setField("Check Box18", states[0]);*/
 
 
         stamper.setFormFlattening(true);
@@ -227,12 +214,12 @@ public class MainClass {
 
         reader = new PdfReader(baos.toByteArray());
         Document document = new Document();
-        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurance/tmp/IndependentCopy.pdf"));
+        PdfCopy writer = new PdfCopy(document, new FileOutputStream("src/main/resources/insurances/tmp/IndependentCopy.pdf"));
         document.open();
         writer.addPage(writer.getImportedPage(reader, 1));
         writer.addPage(writer.getImportedPage(reader, 2));
 
-        reader = new PdfReader(letter, null) ;
+        reader = new PdfReader(letter, null);
         baos = new ByteArrayOutputStream();
         stamper = new PdfStamper(reader, baos);
         stamper.setFormFlattening(true);
